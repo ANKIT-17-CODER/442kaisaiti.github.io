@@ -376,7 +376,16 @@ footer p {
   font-size: medium;
 }
 
-/* slides */
+/* NAVBAR */
 .navbar-toggler-icon {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(200%);
+}
+@media (max-width: 576px) {
+    .navbar-expand-sm .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+    }
+    .navbar-expand-sm .navbar-toggler {
+        display: none !important;
+    }
 }
