@@ -380,7 +380,7 @@ footer p {
 .navbar-toggler-icon {
     filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(200%) contrast(200%);
 }
-@media (max-width: 576px) {
+@media (max-width: 991.98px) {
     .navbar-expand-sm .navbar-collapse {
         display: flex !important;
         flex-basis: auto;
