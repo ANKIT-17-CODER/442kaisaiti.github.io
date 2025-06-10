@@ -17,7 +17,8 @@
   <style>
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(to right, #e0f7fa, #fffde7); /* Matches principal-message.html, gallery.html, electrician.html, fitter.html, welder.html, wireman.html, plumber.html, turner.html, rac.html */
+      background: linear-gradient(to right, #e0f7fa, #fffde7);
+      /* Matches principal-message.html, gallery.html, electrician.html, fitter.html, welder.html, wireman.html, plumber.html, turner.html, rac.html */
       color: #333;
       overflow-x: hidden;
     }
@@ -81,6 +82,15 @@
     .college-image {
       margin-top: 30px;
       text-align: center;
+    }
+
+    .college-name {
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: white;
+      font-family: 'Georgia', serif;
+      margin: 0;
+      text-shadow: none;
     }
 
     .college-image img {
@@ -168,92 +178,111 @@
     .footer-divider {
       border-color: #444;
     }
+
+    
   </style>
 </head>
 
 <body>
   <!-- Header (Copied from main page) -->
-  <header class="border-bottom py-2 mb-4 text-white" style="background-color: #002147;">
-    <div class="container d-flex flex-column flex-md-row align-items-center gap-3">
-      <img src="mlogo.png" alt="College Logo" class="college-logo img-fluid" style="max-width: 100px;">
-      <div class="flex-grow-1 text-center text-md-start">
-        <h2 class="college-name mb-2 fs-4 fs-md-2">Government ITI, Kasia, Kushinagar (Male) [442]</h2>
-        <nav class="navbar navbar-expand-lg">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav nav-tabs flex-column flex-lg-row w-100">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">About Us</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="overview.html">Our College</a></li>
-                  <li><a class="dropdown-item active" href="achievements.html">Achievements</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="principal-message.html">Principal Message</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="gallery.html">Gallery</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Trade</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="electrician/electrician1.html">Electrician</a></li>
-                  <li><a class="dropdown-item" href="fitter/fitter.html">Fitter</a></li>
-                  <li><a class="dropdown-item" href="welder/welder.html">Welder</a></li>
-                  <li><a class="dropdown-item" href="wireman/wireman.html">Wireman</a></li>
-                  <li><a class="dropdown-item" href="plumber/plumber.html">Plumber</a></li>
-                  <li><a class="dropdown-item" href="turner/turner.html">Turner</a></li>
-                  <li><a class="dropdown-item" href="RAC/rac.html">Refrigeration and Air Conditioning Technician</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Admission</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="admission.html">Apply Now</a></li>
-                </ul>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Instructor</a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="instructor.html">Our Team</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contact.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="fees.html">Fees Structure</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-      <img src="logoo.png" alt="Skill India Logo" class="skill-india-logo img-fluid"
-        style="max-width: 100px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">
-      <div class="floating-btn-container d-flex gap-2">
-        <a href="https://wa.me/919876543210" class="floating-btn whatsapp-float btn btn-success btn-sm rounded-circle"
-          title="Chat on WhatsApp" target="_blank">
-          <i class="fab fa-whatsapp fs-5"></i>
-        </a>
-        <a href="tel:+919876543210" class="floating-btn call-float btn btn-primary btn-sm rounded-circle" title="Call Us">
-          <i class="bi bi-telephone-fill fs-5"></i>
-        </a>
-      </div>
-    </div>
-  </header>
+      <header class="border-bottom py-2 mb-4 text-white" style="background-color: #002147;">
+        <div class="container d-flex flex-column flex-md-row align-items-center gap-3">
+            <!-- Logo -->
+            <img src="mlogo.png" alt="College Logo" class="college-logo img-fluid" style="max-width: 100px;">
 
+            <!-- College Name and Navigation -->
+            <div class="flex-grow-1 text-center text-md-start">
+                <h2 class="college-name mb-2 fs-4 fs-md-2">Government ITI, Kasia, Kushinagar (Male) [442]
+                </h2>
+                </h2>
+
+                <!-- Navigation Tabs -->
+                <nav class="navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="nav nav-tabs flex-column flex-lg-row w-100">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                    role="button">About Us</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="overview.html">Our College</a></li>
+                                    <li><a class="dropdown-item active" href="achievements.html">Achievements</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="principal-message.html">Principal Message</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                    role="button">Trade</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="electrician/electrician1.html">Electrician</a>
+                                    </li>
+                                    <li><a class="dropdown-item" href="fitter/fitter.html">Fitter</a></li>
+                                    <li><a class="dropdown-item" href="welder/welder.html">Welder</a></li>
+                                    <li><a class="dropdown-item" href="wireman/wireman.html">Wireman</a></li>
+                                    <li><a class="dropdown-item" href="plumber/plumber.html">Plumber</a></li>
+                                    <li><a class="dropdown-item" href="turner/turner.html">Turner</a></li>
+                                    <li><a class="dropdown-item" href="RAC/rac.html">Refrigeration and Air Conditioning
+                                            Technician</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                    role="button">Admission</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="admission.html">Apply Now</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                    role="button">Instructor</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="instructor.html">Our Team</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="fees.html">Fees Structure</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+            <img src="logoo.png" alt="Skill India Logo" class="skill-india-logo img-fluid"
+                style="max-width: 100px; margin-left: 10px; margin-right: 10px; vertical-align: middle;">
+            <!-- Floating Buttons Container -->
+            <div class="floating-btn-container d-flex gap-2">
+                <a href="https://wa.me/919876543210"
+                    class="floating-btn whatsapp-float btn btn-success btn-sm rounded-circle" title="Chat on WhatsApp"
+                    target="_blank">
+                    <i class="fab fa-whatsapp fs-5"></i>
+                </a>
+                <a href="tel:+919876543210" class="floating-btn call-float btn btn-primary btn-sm rounded-circle"
+                    title="Call Us">
+                    <i class="bi bi-telephone-fill fs-5"></i>
+                </a>
+            </div>
+        </div>
+    </header>
   <!-- Contact Info Card -->
   <div class="container contact-container" data-aos="fade-up">
     <h2 data-aos="zoom-in" data-aos-delay="200">Contact Us</h2>
     <div class="contact-info">
-      <p><i class="bi bi-building"></i> GR09901151-Government Industrial Training Institute, Kasia, (Male) Bhaisha Post-Hetimpur Kushinagar, UTTAR PRADESH 274402</p>
+      <p><i class="bi bi-building"></i> GR09901151-Government Industrial Training Institute, Kasia, (Male) Bhaisha
+        Post-Hetimpur Kushinagar, UTTAR PRADESH 274402</p>
       <p><i class="bi bi-telephone-fill"></i> Phone: +91 9876543210</p>
       <p><i class="bi bi-whatsapp"></i> WhatsApp: +91 9876543210</p>
       <p><i class="bi bi-envelope-fill"></i> Email: info@govtiti.edu.in</p>
@@ -285,7 +314,8 @@
         <div class="col-12 col-md-4 mb-4">
           <h5>Location</h5>
           <p><a href="location.html" class="footer-link">Our Location</a></p>
-          <p>GR09901151-Government Industrial Training Institute, Kasia, (Male) Bhaisha Post-Hetimpur Kushinagar, UTTAR PRADESH 274402</p>
+          <p>GR09901151-Government Industrial Training Institute, Kasia, (Male) Bhaisha Post-Hetimpur Kushinagar, UTTAR
+            PRADESH 274402</p>
         </div>
         <div class="col-12 col-md-4 mb-4">
           <h5>Complaint Box</h5>
